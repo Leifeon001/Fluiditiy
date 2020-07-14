@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
     }
     void MovementX()
     {
-        horizontalDirection = Input.GetAxis("HORIZONTAL");
+        horizontalDirection = Input.GetAxis("Horizontal");
         Playerrigidbody2D.AddForce(new Vector2(xForce*horizontalDirection, 0) );
     }
 
