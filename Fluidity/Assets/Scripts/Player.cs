@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
 
     [Header("Max speed")]
     public float maxSpeedX;
+    [Header("Current State")]
+    public string CurrState;
     public void Controlspeed()
     {
         speedX = Playerrigidbody2D.velocity.x;
@@ -34,7 +36,7 @@ public class Player : MonoBehaviour
     }
     void MovementX()
     {
-        horizontalDirection = Input.GetAxis("HORIZONTAL");
+        horizontalDirection = Input.GetAxis(HORIZONTAL);
         Playerrigidbody2D.AddForce(new Vector2(xForce*horizontalDirection, 0) );
     }
 
@@ -45,5 +47,22 @@ public class Player : MonoBehaviour
         MovementX();
         //speedX = Playerrigidbody2D.velocity.x;
         Controlspeed();
+    }
+
+    public void ChangeState(string Matter)
+    {
+        switch (Matter)
+        {
+            case "Liquid":
+                Debug.Log("Change to liquid");
+                break; 
+            case "Solid":
+                Debug.Log("Change to solid");
+                break;
+            case "Gas":
+                Debug.Log("Change to gas");
+                break;
+        }
+        CurrState = Matter.ToString();
     }
 }
