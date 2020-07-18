@@ -46,4 +46,20 @@ public class Player : MonoBehaviour
         //speedX = Playerrigidbody2D.velocity.x;
         Controlspeed();
     }
+
+    public void ChangeState(string Change)
+    {
+        switch (Change)
+        {
+            case "Liquid":
+                Debug.Log("Liquid");
+                break;
+            case "Solid":
+                Debug.Log("Solid");
+                break;
+            case "Gas":
+                Debug.Log("Gas");
+                break;
+        }
+    }
 }
