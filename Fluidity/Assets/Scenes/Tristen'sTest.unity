@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 13524980}
   - component: {fileID: 13524981}
   m_Layer: 0
-  m_Name: Liquid
+  m_Name: HeaterTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,6 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Matter: 0
+  Timer: 3
+  TimerAct: 0
 --- !u!61 &13524981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -274,6 +276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Matter: 2
+  Timer: 0
+  TimerAct: 0
 --- !u!61 &69060351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -417,6 +421,7 @@ MonoBehaviour:
   - {fileID: 2087272922}
   - {fileID: 436538902}
   - {fileID: 1363501135}
+  StaNum: 0
 --- !u!58 &153730039
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -830,7 +835,7 @@ GameObject:
   - component: {fileID: 1535029314}
   - component: {fileID: 1535029315}
   m_Layer: 0
-  m_Name: Solid
+  m_Name: Ice Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,6 +854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Matter: 1
+  Timer: 0
+  TimerAct: 0
 --- !u!61 &1535029315
 BoxCollider2D:
   m_ObjectHideFlags: 0
