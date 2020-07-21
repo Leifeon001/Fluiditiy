@@ -88,7 +88,7 @@ public class StateSwitchInput : MonoBehaviour
                 ply.speedX = 2f;
                 ply.xForce = 8;
                 box.size = new Vector2(1, .2f);
-                box.offset = new Vector2(0, .4f);
+                box.offset = new Vector2(0, -.4f);
                 
                 break;
         }
