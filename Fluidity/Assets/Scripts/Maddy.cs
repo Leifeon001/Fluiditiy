@@ -13,7 +13,7 @@ public class Maddy : MonoBehaviour
 
     public void ToGameState()
     {
-        SceneManager.LoadScene("ExtraScene");
+        SceneManager.LoadScene("Yu Test");
     }
    
     public void Quit()
