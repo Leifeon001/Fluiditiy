@@ -7,10 +7,12 @@ public class StateSwitchInput : MonoBehaviour
     Rigidbody2D Playerrigidbody2D;
     Player ply;
     public int state = 1;
-    Renderer rend;
+    
     BoxCollider2D box;
     public AudioSource Audi;
     public AudioClip clip1, clip2, clip3;
+    SpriteRenderer spriteRenderer;
+    public Sprite water, ice, gas;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +20,8 @@ public class StateSwitchInput : MonoBehaviour
         box = GetComponent<BoxCollider2D>();
         Playerrigidbody2D = GetComponent<Rigidbody2D>();
         ply = GetComponent<Player>();
-        rend = GetComponent<Renderer>();
-
+       
+        spriteRenderer = GetComponent<SpriteRenderer>();
         Change();
     }
 
@@ -28,7 +30,7 @@ public class StateSwitchInput : MonoBehaviour
     {
         
 
-        if (Input.GetKeyDown(KeyCode.Q)&& !Audi.isPlaying)
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             state--;
            
@@ -36,7 +38,7 @@ public class StateSwitchInput : MonoBehaviour
                 state = 3;
             Change();
         }
-        if (Input.GetKeyDown(KeyCode.E)&& !Audi.isPlaying)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             state++;
             
@@ -57,7 +59,7 @@ public class StateSwitchInput : MonoBehaviour
         {
             case 1:
                 //Ice
-                rend.material.SetColor("_Color", Color.red);
+                spriteRenderer.sprite = ice;
                 if (!Audi.isPlaying)
                     Audi.PlayOneShot(clip1);
                 Playerrigidbody2D.gravityScale = 3;
@@ -69,9 +71,10 @@ public class StateSwitchInput : MonoBehaviour
 
             case 2:
                 //Gas
+                spriteRenderer.sprite = gas;
                 if (!Audi.isPlaying)
                     Audi.PlayOneShot(clip2);
-                rend.material.SetColor("_Color", Color.gray);
+                
                 Playerrigidbody2D.gravityScale = -1;
                 ply.speedX = 2f;
                 ply.xForce = 14;
@@ -81,14 +84,15 @@ public class StateSwitchInput : MonoBehaviour
 
             case 3:
                 //Water
+                spriteRenderer.sprite = water;
                 if (!Audi.isPlaying)
                     Audi.PlayOneShot(clip3);
-                rend.material.SetColor("_Color", Color.blue);
+               
                 Playerrigidbody2D.gravityScale = 1;
                 ply.speedX = 2f;
                 ply.xForce = 8;
                 box.size = new Vector2(1, .2f);
-                box.offset = new Vector2(0, -.4f);
+                box.offset = new Vector2(0,0);
                 
                 break;
         }
