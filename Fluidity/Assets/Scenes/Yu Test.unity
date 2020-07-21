@@ -678,7 +678,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7754,15 +7754,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3916503296045070737, guid: 344cf2662cc396446b8899f6dd06ed75,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3916503296045070739, guid: 344cf2662cc396446b8899f6dd06ed75,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.85
+      value: -16.98
       objectReference: {fileID: 0}
     - target: {fileID: 3916503296045070739, guid: 344cf2662cc396446b8899f6dd06ed75,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.35
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 3916503296045070739, guid: 344cf2662cc396446b8899f6dd06ed75,
         type: 3}
@@ -7889,7 +7894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684790096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.6801815, y: -1.335354, z: -10}
+  m_LocalPosition: {x: -12.681553, y: -0.94490284, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8007,7 +8012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709183237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.85, y: -1.35, z: -10}
+  m_LocalPosition: {x: -16.98, y: -0.96, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 196335270}
