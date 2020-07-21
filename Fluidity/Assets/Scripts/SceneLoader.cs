@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
 
 public class SceneLoader : MonoBehaviour
 {
-
-    public Button continueButton;
+    GameObject levelObject;
+    Button continueButton;
     int[] data;
 
     private void Start()
@@ -26,6 +28,14 @@ public class SceneLoader : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    public void LoadSelectedLevel()
+    {
+        string buttonName = EventSystem.current.currentSelectedGameObject.name;
+        levelObject = GameObject.Find(buttonName);
+        string sceneName = levelObject.GetComponentInChildren<Text>().text;
+        SceneManager.LoadScene(sceneName);
     }
 
     public void ContinueLevel()
