@@ -120,7 +120,7 @@ MonoBehaviour:
   clip3: {fileID: 8300000, guid: cd50a00d11cc3f240b1bddb8ab7edd0a, type: 3}
   water: {fileID: 21300000, guid: 3e9c650cc31c5cd409351a422e5c7222, type: 3}
   ice: {fileID: 21300000, guid: 42b75790c7f731f48914a2b5eb1cc889, type: 3}
-  gas: {fileID: 21300000, guid: 2c46391930cb32f4982ada37b367639e, type: 3}
+  gas: {fileID: 21300000, guid: 0ff92c8982cc0094589c28bc9b0fe925, type: 3}
 --- !u!82 &3916503296045070740
 AudioSource:
   m_ObjectHideFlags: 0
