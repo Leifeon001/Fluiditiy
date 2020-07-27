@@ -8,7 +8,7 @@ public class ButtonSounds : MonoBehaviour
 {
     public AudioClip _audHov;
     public AudioClip _audPres;
-    public AudioSource audSrc;
+    private AudioSource audSrc;
 
     void Start()
     {

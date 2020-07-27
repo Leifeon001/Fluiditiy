@@ -109,8 +109,8 @@ RectTransform:
   m_Father: {fileID: 922671424278632906}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -811,7 +811,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
   _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
-  audSrc: {fileID: 0}
 --- !u!82 &4208016589320768105
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1186,7 +1185,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
   _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
-  audSrc: {fileID: 0}
 --- !u!114 &7317822615056848496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1337,9 +1335,9 @@ GameObject:
   - component: {fileID: 517757405918352793}
   - component: {fileID: 9013829397000540681}
   - component: {fileID: 3922627922992384409}
-  - component: {fileID: 3561088597286485830}
   - component: {fileID: 3355064285851470789}
   - component: {fileID: 4604124729695509160}
+  - component: {fileID: 8874685177481235966}
   m_Layer: 5
   m_Name: RawImage (1)
   m_TagString: Untagged
@@ -1399,21 +1397,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &3561088597286485830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5320148952367739756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7e07eab0a0310a4eb42d7fab4e81c7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
-  _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
-  audSrc: {fileID: 0}
 --- !u!114 &3355064285851470789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,7 +1414,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3561088597286485830}
+        - m_Target: {fileID: 8874685177481235966}
           m_MethodName: Hovering
           m_Mode: 1
           m_Arguments:
@@ -1446,7 +1429,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 3561088597286485830}
+        - m_Target: {fileID: 8874685177481235966}
           m_MethodName: Pressed
           m_Mode: 1
           m_Arguments:
@@ -1553,6 +1536,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8874685177481235966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5320148952367739756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e07eab0a0310a4eb42d7fab4e81c7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
+  _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
 --- !u!1 &5383194627415873157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1583,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.27, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1924,8 +1921,8 @@ RectTransform:
   m_Father: {fileID: 805276772172453373}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.27, y: 0}
-  m_AnchorMax: {x: 0.27, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2191,7 +2188,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
   _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
-  audSrc: {fileID: 0}
 --- !u!1 &7272114084449539675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,7 +2364,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
   _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
-  audSrc: {fileID: 0}
 --- !u!114 &9172552050437447285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2618,7 +2613,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2745,7 +2740,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
   _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
-  audSrc: {fileID: 0}
 --- !u!114 &1533097451367787135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3233,7 +3227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8841457152269002790
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3771,7 +3765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8841457153233846148
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4092,7 +4086,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8841457153392290655}
           m_MethodName: 
           m_Mode: 1
           m_Arguments:
@@ -4107,7 +4101,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8841457153392290655}
           m_MethodName: 
           m_Mode: 1
           m_Arguments:
@@ -4132,7 +4126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audHov: {fileID: 8300000, guid: 562ad4fa4fed3b54f93addba5404fbdb, type: 3}
   _audPres: {fileID: 8300000, guid: aab44b21203e1b247ac727ad0d9db3ed, type: 3}
-  audSrc: {fileID: 0}
 --- !u!1 &8841457153475787917
 GameObject:
   m_ObjectHideFlags: 0
