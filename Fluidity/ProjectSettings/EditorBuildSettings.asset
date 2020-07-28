@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Yu Test.unity
     guid: 9f19211f6e4985a458173647304cbc30
+  - enabled: 1
+    path: Assets/Scenes/Tristen'sTest.unity
+    guid: a183fd05cd283b44c858758d23ab13ae
   m_configObjects: {}
