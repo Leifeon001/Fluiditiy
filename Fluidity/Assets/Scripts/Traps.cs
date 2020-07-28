@@ -29,7 +29,7 @@ public class Traps : MonoBehaviour
     {
         if(Matter.ToString() == "Liquid" && other.name == "Player")
         {
-            Debug.Log("Player is Staying");
+            //Debug.Log("Player is Staying");
             TimerAct = true;
         }
     }

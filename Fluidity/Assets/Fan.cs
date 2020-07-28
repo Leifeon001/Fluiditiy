@@ -9,7 +9,7 @@ public class Fan : MonoBehaviour
     {
         if (other.GetComponent<Player>().StaNum == 2)
         {
-            Debug.Log("Triggered");
+            //Debug.Log("Triggered");
             other.GetComponent<Rigidbody2D>().AddForce(Vector2.up * Launch);
         }
     }

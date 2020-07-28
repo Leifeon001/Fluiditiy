@@ -66,17 +66,17 @@ public class Player : MonoBehaviour
         switch (Change)
         {
             case "Solid":
-                Debug.Log("Solid");
+                //Debug.Log("Solid");
                 StaNum = 0;
                 xForce = 6;
                 break;
             case "Liquid":
-                Debug.Log("Liquid");
+                //Debug.Log("Liquid");
                 StaNum = 1;
                 xForce = 3;
                 break;
             case "Gas":
-                Debug.Log("Gas");
+                //Debug.Log("Gas");
                 StaNum = 2;
                 xForce = 4;
                 break;
