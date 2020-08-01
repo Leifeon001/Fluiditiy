@@ -803,7 +803,6 @@ GameObject:
   - component: {fileID: 926365014}
   - component: {fileID: 926365013}
   - component: {fileID: 926365015}
-  - component: {fileID: 926365016}
   m_Layer: 0
   m_Name: Doors Tilemap
   m_TagString: Untagged
@@ -970,19 +969,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!114 &926365016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926365011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd252cf13268b242982849710de16d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!1 &1014491717
 GameObject:
   m_ObjectHideFlags: 0
@@ -8079,7 +8065,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8097,7 +8083,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8446,16 +8432,16 @@ Tilemap:
   - m_RefCount: 63
     m_Data: {fileID: 5984606817973071975, guid: 6c2bec39e0915064cb79ca949e8ac249,
       type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 2101906615618933978, guid: 6c2bec39e0915064cb79ca949e8ac249,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 14
     m_Data: {fileID: 21300000, guid: 9207455b6554149489a95524df806894, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 2101906615618933978, guid: 6c2bec39e0915064cb79ca949e8ac249,
+      type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 8712534302704341899, guid: 6c2bec39e0915064cb79ca949e8ac249,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 51
     m_Data:
@@ -9359,7 +9345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684790096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.43479, y: -0.9405226, z: -10}
+  m_LocalPosition: {x: -9.21018, y: -0.93270963, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9652,6 +9638,7 @@ GameObject:
   - component: {fileID: 1963476495}
   - component: {fileID: 1963476494}
   - component: {fileID: 1963476493}
+  - component: {fileID: 1963476496}
   m_Layer: 0
   m_Name: Door2
   m_TagString: Untagged
@@ -9844,6 +9831,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1963476496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963476491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd252cf13268b242982849710de16d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &2063593567
 GameObject:
   m_ObjectHideFlags: 0

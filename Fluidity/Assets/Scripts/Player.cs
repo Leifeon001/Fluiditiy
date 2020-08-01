@@ -37,7 +37,10 @@ public class Player : MonoBehaviour
 
         //List of Gameobjects States sets all the game objects false
         StaNum = 0;
-        ChangeState(States[StaNum].name);
+        if (States.Count > 0)
+        {
+            ChangeState(States[StaNum].name);
+        }
         //Turns player into whatever state is at position 0 Changes player stats in StateChange()
     }
     void MovementX()
