@@ -803,10 +803,65 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1516770454361170290, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516770454361170290, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956508554351533326, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956508554351533326, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956508554351533326, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828063944527140424, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828063944527140424, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828063944527140424, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5067414565389695059, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5067414565389695059, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8841457152053733683, guid: eecb11463d3bf6444bd69f9a428fb69e,
         type: 3}
       propertyPath: m_Name
       value: Pause Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841457152053733683, guid: eecb11463d3bf6444bd69f9a428fb69e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8841457152053733687, guid: eecb11463d3bf6444bd69f9a428fb69e,
         type: 3}
@@ -5341,7 +5396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1570034313
 RectTransform:
   m_ObjectHideFlags: 0
