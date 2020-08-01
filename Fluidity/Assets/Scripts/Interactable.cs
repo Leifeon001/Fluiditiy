@@ -31,7 +31,8 @@ public class Interactable : MonoBehaviour
 
     void OpenDoor()
     {
-        Door.transform.position = new Vector3(Door.transform.position.x, -6.0f, Door.transform.position.z);
+        Destroy(Door);
+      /*  Door.transform.position = new Vector3(Door.transform.position.x, -6.0f, Door.transform.position.z);*/
        
     }
 
@@ -52,6 +53,5 @@ public class Interactable : MonoBehaviour
             TimerAct = false;
         }
     }
-
 
 }
