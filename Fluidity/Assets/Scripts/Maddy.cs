@@ -11,12 +11,6 @@ public class Maddy : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    //Sandbox Level
-    public void ToSandboxLevel()
-    {
-        SceneManager.LoadScene("Yu Test");
-    }
-   
     public void Quit()
     {
 #if UNITY_EDITOR 
@@ -27,8 +21,15 @@ public class Maddy : MonoBehaviour
         Debug.Log("Player quits game");
     }
 
+    //Sandbox Level
+    public void ToSandboxLevel()
+    {
+        SceneManager.LoadScene("Yu Test");
+        Debug.Log("Yu level");
+    }
+
     //Environment Level
-    public void EnvironmentLevel()
+    public void ToEnvironmentLevel()
     {
         SceneManager.LoadScene("Tristen'sTest");
     }
