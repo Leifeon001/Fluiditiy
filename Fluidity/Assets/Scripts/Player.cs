@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     [Header("Max speed")]
     public float maxSpeedX;
     [Header("States")]
-    public List<GameObject> States;
+    public List<Sprite> States;
     public int StaNum;
     public void Controlspeed()
     {
@@ -36,10 +36,6 @@ public class Player : MonoBehaviour
         Playerrigidbody2D = GetComponent<Rigidbody2D>();
 
         //List of Gameobjects States sets all the game objects false
-        foreach (GameObject Matter in States)
-        {
-            Matter.SetActive(false);
-        }
         StaNum = 0;
         ChangeState(States[StaNum].name);
         //Turns player into whatever state is at position 0 Changes player stats in StateChange()
@@ -62,7 +58,6 @@ public class Player : MonoBehaviour
     //Function that controls players state change keep States list to same layout as below
     public void ChangeState(string Change)
     {
-        States[StaNum].SetActive(false);
         switch (Change)
         {
             case "Solid":
@@ -81,6 +76,6 @@ public class Player : MonoBehaviour
                 xForce = 4;
                 break;
         }
-        States[StaNum].SetActive(true);
+        GetComponentInChildren<SpriteRenderer>().sprite = States[StaNum];
     }
 }

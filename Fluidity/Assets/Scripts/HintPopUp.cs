@@ -5,9 +5,14 @@ using UnityEngine;
 public class HintPopUp : MonoBehaviour
 {
     public GameObject Hint1;
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Collision detected");
+        //Debug.Log("Collision detected");
         Hint1.SetActive(true);
+    }
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        //Debug.Log("Collision detected");
+        Hint1.SetActive(false);
     }
 }
